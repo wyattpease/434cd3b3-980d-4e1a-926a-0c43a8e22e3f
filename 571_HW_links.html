@@ -1,0 +1,67 @@
+<style>
+    body, html {
+        height: 100%;
+        font-family:Arial, Helvetica, sans-serif
+    }
+
+    .bg {
+    background-image: url("background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }   
+
+    .HWLinksTable{
+        width:100%;
+        text-align: center;
+        margin-top: 7.5%;
+    }
+
+    div a {
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+        color:white;
+        font-size: large;
+        font-weight: bold;
+    }
+
+    td div {
+        border-radius: 25px;
+        background: rgba(0,0,0,0.01);
+        padding: 20px;
+        width: 50%;
+        height: 20px;
+        margin: auto;
+        cursor: pointer;
+    }
+    td div:hover {
+        background: rgba(253, 244, 220,0.5);
+    }
+    td div:hover a{
+       color:rgb(44, 44, 44);
+    }
+</style>
+
+<body class="bg">
+    <h1 style="padding-top:2%;text-align:center;color:white">CSCI 571 Homework Links</h2>
+    <table class="HWLinksTable">
+        <tbody>
+            <tr>
+                <td>
+                    <div onclick="window.open('Error.html')"><a>Homework 1</a></div>
+                </td>
+                <td>
+                    <div onclick="window.open('Error.html')"><a href="">Homework 2</a></div>
+                </td>
+                <td>
+                    <div onclick="window.open('Error.html')"><a href="">Homework 3</a></div>
+                </td>
+                <td>
+                    <div onclick="window.open('Error.html')"><a href="">Homework 4</a></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
