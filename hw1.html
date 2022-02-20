@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<link href="mystyle.css" rel="stylesheet">
+    <body>
+        <div class="thdiv">
+            <table class="HeaderTable">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="hw1.html">Home</a>
+                        </td>
+                        <td>
+                            <a href="Error.html">Explore</a>
+                        </td>
+                        <td>
+                            <a href="Error.html">Contact</a></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="banner" role="banner">
+            <img src="rodeo-drive.jpg" alt="Banner Image" />
+            <div class="center-text">LA - The City of Angels</div>
+        </div>
+        <div class="Section2">
+            <table class="card-table">
+                <tbody>
+                    <tr id="S2tr"></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="Section3">
+            <table class="s3-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="stext" id="s3-text-1"></div>
+                            <div class="p-10 stext" id="s3-text-2"></div>
+                        </td>
+                        <td>
+                            <div id="s3-img">   
+                                <img src="lasky.png"/>                            
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="Section4">
+            <table class="s4-table">
+                <tbody id="S4tb"></tbody>
+            </table>
+        </div>   
+        <footer>
+            <div id="footer-left">
+                <p>Tip the world on its side and everything loose will land in Los Angeles.</p>
+                <p id="quote">-Frank Lloyd Wright</p>
+            </div>
+            <div id="footer-right">
+                <p>Designed By</p>
+                <p id="contact-name">Wyatt Pease</p>
+                <p id="contact">
+                    <a href="mailto:wlpease@usc.edu">wlpease@usc.edu</a>
+                    <a href="tel:+1-832-767-9270">+18327679270</a>
+                </p>               
+            </div>
+        </footer>      
+        <script type="text/javascript" charset="utf-8">
+            fetch("data.json")
+            .then(res => res.json())
+            .then(data => {
+                for (let i = 0; i < Object.keys(data.section2).length; i++) {
+
+                    td = document.createElement("td")
+                    container = document.createElement("div")
+                    container.className = "card-container"
+                    img = document.createElement("div")
+                    img.className = "card-img"
+                    text = document.createElement("div")
+                    text.className='card-text'
+                    header = document.createElement("div")
+                    header.setAttribute('class','card-header')
+
+                    container.appendChild(img)
+                    container.appendChild(header)
+                    container.appendChild(text)
+                    td.appendChild(container)
+                    document.getElementById('S2tr').appendChild(td)
+
+                    var elem = document.createElement("img");
+                    elem.setAttribute("src", data.section2[i].image);
+                    elem.setAttribute("height", "125");
+                    elem.setAttribute("width", "190");
+                    img.appendChild(elem)
+                    header.innerText = data.section2[i].heading
+                    text.innerText = data.section2[i].text
+                }
+
+                for (let i = 0; i < Object.keys(data.section3.text).length; i++) {
+                    j = (i+1).toString()
+                    document.getElementById('s3-text-'+j).innerText = data.section3.text[i]
+                }
+
+                for (let i = 0; i < Object.keys(data.section4).length; i++) {
+
+                    tr = document.createElement('tr')
+                    td = document.createElement('td')
+                    img = document.createElement('div')
+                    container = document.createElement('div')
+                    container.setAttribute('class', 's4-container')
+                    header = document.createElement('div')    
+                    text = document.createElement('s4-text')
+                    text.setAttribute('class', 's4-text')
+
+                    container.appendChild(header)
+                    container.appendChild(text)
+                    if (i % 2 == 0){
+                        img.setAttribute('class', 'img-right')
+                        td.appendChild(img)
+                        td.appendChild(container)
+                        header.setAttribute('class', 's4-header')
+                    }
+                    else {
+                        img.setAttribute('class', 'img-left')
+                        header.setAttribute('class', 's4-header text-right')
+                        td.appendChild(container)
+                        td.appendChild(img)
+                    }
+
+                    tr.appendChild(td)
+                    document.getElementById('S4tb').appendChild(tr)
+
+                    var elem = document.createElement("img");
+                    elem.setAttribute("src", data.section4[i].image);
+                    elem.setAttribute("height", "145");
+                    elem.setAttribute("width", "220");
+                    img.appendChild(elem)
+                    header.innerText = data.section4[i].heading
+                    text.innerText = data.section4[i].text
+                }
+            })
+        </script>
+    </body> 
+</html>

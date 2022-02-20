@@ -1,0 +1,199 @@
+body{
+    width:990px;
+    margin: 0;
+    color:white;
+    margin-bottom: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.banner {
+    width: 990px;
+    height: 240px;
+    overflow: hidden;
+}
+.ErrorBanner {
+    width: 990px;
+    height: 240px;
+    background: linear-gradient(to top, rgba(201, 80, 0, 0.5), rgba(201, 80, 0, .5)), url(404-featured.jpg) no-repeat center -160px;
+    background-position-y: -160px;
+    background-size: 990px;
+}
+.banner img {   
+    width: 990px;
+    height: 700px;
+    margin: -392px 0 0 0;
+}
+#s3-img img {
+    width:335px;
+    height: 190px;
+}
+.s3-table {
+    border-spacing:15px;
+}
+.s3-table td {
+    vertical-align: top;
+}
+.s4-header {
+    padding-bottom: 15px;
+    font-size:large;
+    font-weight:bold;
+}
+.stext {
+    font-size:x-small;
+}
+.s4-text {
+    font-size:x-small;
+    width:475px;
+}
+.s4-table {
+    line-height: .9em;
+}
+.s4-table td {
+    vertical-align: top;
+    display: -webkit-box;
+}
+.text-right {
+    text-align:right;
+}
+.p-10 {
+    padding-top: 10px;
+}
+.s4-container {
+    width: 475px;
+    padding-bottom:25px;
+}
+.img-right {
+    padding-right:15px;
+}
+.img-left {
+    padding-left:15px;
+}
+.thdiv {   
+    width: 990px;
+    height: 60px;
+    background-color: rgba(18,20,28,255);
+    color:orange;
+    align-items: center;
+}
+.thdiv a{   
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+    text-shadow: 0px 1px 0 red
+}
+.card-table td{
+    background-color: rgba(18,20,28,255);
+    font-family:verdana, sans-serif;
+    font-weight: lighter;
+    width: 210px;
+    vertical-align: top;
+    box-shadow: 0px 0px red, 0em .3em .3em #0f0f0f;
+}
+.card-container{
+    padding:12px;
+    padding-bottom:32px
+}
+.card-text{
+    font-size: x-small;
+}
+.card-header{
+    padding:10px 0 10px 0;
+    font-size: small;
+}
+.card-table{
+    margin-left:auto;
+    margin-right:auto;
+    border-spacing: 20px;
+}
+.Section2{
+    background-color: rgba(33,37,41,255);
+    height: 425px;
+    align-items: center;
+    padding-top:75px;
+}
+.Section3{
+    background-color: rgb(18,20,28);
+    height:325px;
+    padding: 95px 140px 0 140px;
+}
+.Section4{
+    background-color: rgb(33,37,41);
+    height: 460px;
+    align-items: center;
+    padding: 110px 140px 0 140px;
+}
+.ErrorSection {
+    background-color: rgb(33,37,41);
+    height: 160px;
+    padding-top: 90px;
+    text-align: center;
+    font-weight: bold;
+}
+footer {
+    height:150px;
+    background-color: rgb(18,20,28);
+    margin-top: -20px;
+}
+footer a {
+    color:white;
+    text-decoration: none;
+    font-size: x-small;
+}
+.HeaderTable{   
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 10px;
+}
+.HeaderTable td{
+    width:125px;
+}
+.ErrorTD a {
+    color: rgb(209, 148, 16);
+    text-shadow: 0px .5px 0 white;
+}
+.center-text {
+    position: absolute;
+    top: 155px;
+    width:900px;
+    left: 320px;
+    font-size: 27px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(209, 148, 16);
+    text-shadow: 0px .5px 0 white
+}
+.error-center-text {
+    position: absolute;
+    width:900px;
+    top: 155px;
+    left: 391px;
+    font-size: 27px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+} 
+#footer-left {
+    float: left;
+    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: x-small;
+    width: 275px;
+    text-align: center;
+    padding-top: 55px;
+    padding-left: 165px;
+}
+#footer-right {
+    float:right;
+    padding:10px;
+    text-align:center;
+    width:100px;
+    padding-right: 270px;
+}
+#contact-name {
+    font-size:small;
+}
+#contact {
+    line-height: .8em;
+}
+#quote {
+    font-weight: bold;
+}
