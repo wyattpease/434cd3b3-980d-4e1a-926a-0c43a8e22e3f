@@ -13,7 +13,7 @@ body{
 .ErrorBanner {
     width: 990px;
     height: 240px;
-    background: linear-gradient(to top, rgba(201, 80, 0, 0.5), rgba(201, 80, 0, .5)), url(404-featured.jpg) no-repeat center -160px;
+    background: linear-gradient(to top, rgba(201, 80, 0, 0.5), rgba(201, 80, 0, .5)), url(../images/404-featured.jpg) no-repeat center -160px;
     background-position-y: -160px;
     background-size: 990px;
 }

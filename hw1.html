@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link href="mystyle.css" rel="stylesheet">
+<link href="style/hw1.css" rel="stylesheet">
     <body>
         <div class="thdiv">
             <table class="HeaderTable">
@@ -20,7 +20,7 @@
             </table>
         </div>
         <div class="banner" role="banner">
-            <img src="rodeo-drive.jpg" alt="Banner Image" />
+            <img src="images/rodeo-drive.jpg" alt="Banner Image" />
             <div class="center-text">LA - The City of Angels</div>
         </div>
         <div class="Section2">
@@ -40,7 +40,7 @@
                         </td>
                         <td>
                             <div id="s3-img">   
-                                <img src="lasky.png"/>                            
+                                <img src="images/lasky.png"/>                            
                             </div>
                         </td>
                     </tr>
@@ -89,7 +89,7 @@
                     document.getElementById('S2tr').appendChild(td)
 
                     var elem = document.createElement("img");
-                    elem.setAttribute("src", data.section2[i].image);
+                    elem.setAttribute("src", "images/" + data.section2[i].image);
                     elem.setAttribute("height", "125");
                     elem.setAttribute("width", "190");
                     img.appendChild(elem)
@@ -132,7 +132,7 @@
                     document.getElementById('S4tb').appendChild(tr)
 
                     var elem = document.createElement("img");
-                    elem.setAttribute("src", data.section4[i].image);
+                    elem.setAttribute("src", "images/" +data.section4[i].image);
                     elem.setAttribute("height", "145");
                     elem.setAttribute("width", "220");
                     img.appendChild(elem)
